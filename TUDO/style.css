@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    font-family: "Open Sans", serif;
+}
+
+body{
+    background-image:linear-gradient(to right, blue, rgb(99, 99, 192));
+    font-size: 16px; /* = 1em */
+}
+
+div{
+    display: inline-block;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    align-self: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+div#primeiro{
+    border-radius: 50%;
+}
+
+div#escondido > p {
+    display: none;
+}
+
+div#escondido:hover > p{
+    display: block;
+    color: white;
+}
+
+div:hover{
+    background-color: blue;
+}
+
+h1, h2{
+    font-family: "Jersey 15", serif;
+    font-size: 32px; /* = 2em */
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2#principal{
+    text-align: center;
+}
+
+
+
+.cor{
+    color: aquamarine;
+}
+
+main{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+h2{
+    color: rgb(0, 0, 90);
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    font: italic bold 1em Arial, Helvetica, sans-serif;
+    padding:10px 10px 10px 10px ;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic;
+    */
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: aquamarine;
+}
+
+.especial::after{
+    content: '<==';
+}
+/*
+
+SELETORES PERSONALIZADOS
+#  id
+.  class
+:  pseudo-class
+:: pseudo-element
+>  children
+
+*/
+
+

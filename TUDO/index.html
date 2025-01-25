@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/download.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(blue, black);
+        }
+    </style>
+</head>
+<body>
+    <h1>titulo</h1>
+    <p>paragrafo <br> isso é quebra de linha</p> <!-- comentario -->
+    <h1>para escrever um comando faz assim &lt; e &gt; sempre usar o & para fazer simbulos como por exmplo 
+        &reg;
+        &copy;
+    </h1>
+
+    <img src="imagens/download.png" alt="logo imagem teste">
+
+    <img src="https://img.elo7.com.br/product/685x685/4A29F43/imagem-alta-resolucao-para-quadro-ceu-01-quadro.jpg" alt=""><!-- imagem do google-->
+
+    <h1>é o titulo principal</h1>
+    <h2>segundo titulo</h2>
+    <h3>terceiro, e vai aumentando de acordo com a preferencia do texto que vai ate &lt;h6&gt;</h3>
+
+    <u>sublinha a linha como essa</u>
+    <p>eu moro na <address>rua capichaba</address>
+    
+    nessa frase tem <b>em negrito</b> isso nao tem semantica é apenas um negrito
+    agora nessa frase tem semantica <strong>tem sentido em ter colocado em negrito</strong>
+    em itelico é <i>nao semantica</i>
+    <p></p>
+    
+    <p>para fazer usando atalho vc precisa clicar control shift P, enter para whit abreviation e dps a tag</p>
+
+    <p>isso é uma tela </p>
+    
+    <p>para usar um marca <mark>texto é assim</mark> todos os mark vai ser azul pois coloquei o style la no head </p>
+    <p>para mudar a cor precisa usar funcao do css usando o style <mark style="background-color: blue;">desta forma</mark></p>
+
+    <p>para colocar um <del>tezto como excluido</del> usa o </p>
+    <p>e <ins>inserido</ins> assim</p>
+
+    <p>para colocar em cima ou em baixo das letras ou fazer forma desta forma x <sup>20</sup>+3 e desta forma para colocar pra baixo h<sub>2</sub>o</p>
+
+    <p>para colocar algum comando fica melhor colocar em monoespasada usando o code <code>nun = int(input('digite um numero'))</code></p>
+
+    <p>tudo que estiver dentro do pre fica como esta formatado original por exemplo abaixo </p>
+    <pre>
+        uma 
+        palavra 
+        em 
+        cada 
+        linha 
+                ou mais pra frente 
+
+
+                ou pulando mais 
+    </pre>
+
+    <p>para criar uma citacao da prar fazer assim um <q>computador é um burro muito rapido</q> colocando assim vc tbm da sentido a frase </p>
+
+    <blockquote cite="para o link da onde esta a sitacao">da pra colocar uma citacao em bloco e ela se desloca um pouco pro lado tbm</blockquote>
+
+    <p>para colocar uma sigla pode ser assim <abbr title="Hypertext markup lenguage">HTML</abbr>desta foram aparece o significado da sigla quando coloca o mouse em cima</p>
+
+    <h1>fazendo listas ordenadas</h1>
+    
+    <ol type="1" start="1">
+        <li>acoradr</li>
+        <li>trabalhar</li>
+        <li>voltar pra casa</li>
+        <li>estudar prog</li>
+    </ol>
+
+
+    <h1>listas nao ordenadas</h1>
+    <ul type="disc">
+        <li>pao</li>
+        <li>tomate</li>
+        <li>alface</li>
+    </ul>
+
+    <h1>juntando listas</h1>
+
+    <ol type="A">
+        <li>casa</li>
+        <ol>
+            <li>html</li>
+        </ol>
+    </ol>
+
+    <h1>lista de definições</h1>
+
+    <dl>
+        <dt>html</dt>
+        <dd>conteudo de um site</dd>
+        <dt>css</dt>
+        <dd>para estilo</dd>
+    </dl>
+
+    <p>para entrar um link <a href="https://www.youtube.com/youtube">com url assim</a> assim abre na mesma aba </p>
+
+    <p><a href="https://www.youtube.com/youtube" target="_blank" rel="external">mas assim abre em uma aba do lado</a> para nao sair do link do proprio site</p>
+
+    <p>usando links intenor </p>
+
+    para linkar de forma interna usa o <a href="index2.html" target="next">assim indo pra segnda pagina</a>
+
+
+    <p>lista de coisas</p>
+    <ol>
+        <li><a href="index.html">primeiro teste</a></li>
+        <li><a href="index2.html">segundo teste</a></li>
+    </ol>
+
+    <p>para baixar um aquivo precisa fazer assim, e o type muda de acordo com o formato do arquivo por exemplo </p>
+    <a href="rg.pdf" download="rg.pdf" type="aplication/pdf" target="_blank">clique para baixar</a>
+
+    <h1>imagens dinamicas</h1>
+
+    <p>para mudar de imagem de acordo com o tamanho a tela vc precisa fazer essa estrutura sempre comecando pela menor imagem e indo parar as maiores </p>
+    <picture>
+        <source media="(max-width: 1000px)" srcset="imagens/Justicon-Free-Simple-Line-Arrow-Solution-Business-Computer-Technology.512.png" type="">
+        <img src="imagens/download.png" alt="imagem fexivel">
+    </picture>
+
+    <h1>desta forma vai carregar a imagem de baixo como padrao porem se o tamanho da tela for até 1000px vai colocar a de cima</h1>
+
+    <h1>para reproduzir aduio faz assim </h1>
+    <audio src="WhatsApp Ptt 2025-01-09 at 22.07.13.ogg" controls></audio> <p>primeira opcao</p>
+
+    <audio controls loop>
+        <source src="WhatsApp Ptt 2025-01-09 at 22.07.13.ogg" type="audio/ogg" >
+        <source src="WhatsApp Ptt 2025-01-09 at 22.07.13.ogg" type="audio/mp3" >
+    </audio>
+
+    <p>é bom ter varios formatos parar abir em diversos navegadores</p>
+
+    <p>na parte de cima esta em loop e com o controle para dar o play e tem tbm o tipo do audio sendo ogg</p>
+
+    <h1>Videos em Html</h1>
+
+
+    <h1>videos ospedados no proprio servidor </h1>
+    <video src="S4nrio, LAUNCH13, RODRICCI MONTAGEM BOTA HIPNOSIS 1.0 (ULTRA SLOWED BRAZILIAN FU.mp4" type="audio/mp4" height="300px" controls></video>
+
+    <p>essa é a forma simples</p>
+
+    <h1>forma completa</h1>
+
+    <video height="200px" controls >
+        <source src="S4nrio, LAUNCH13, RODRICCI MONTAGEM BOTA HIPNOSIS 1.0 (ULTRA SLOWED BRAZILIAN FU.mp4" type="video/mp4">
+        <source src="S4nrio, LAUNCH13, RODRICCI MONTAGEM BOTA HIPNOSIS 1.0 (ULTRA SLOWED BRAZILIAN FU.mp4" type="video/ogg">
+        <p>seu navegador nao abre videos</p>
+    </video>
+
+    <h2>neste caso de cima o navegador vai tentar abri os arquivos de tipo mp4 e ogg pela ordem colocada e se nao abrir vai colocar a mensagem logo a baixo das duas tentativas</h2>
+
+    <h1>videos tem mt consumo de banda isso deixa mais caro entt prestar atencao nisso </h1>
+
+    <h2>melhor usar plataformas de videos para colocoar no site como vimeo ou youtube fazendo assim </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7EJN9XQo0vI?si=mqoHF-lHpI4boW0V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1 style="background-color: rgb(0, 0, 255);">
+        ola 
+    </h1>
+
+
+    
+
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>vamos ver oq eu lembro pra fazer</h1>
+<p>comecar peela lista</p>
+
+<ol type="1">
+    <li>essa é a lista ordenada </li>
+    <li>e assim vai posso colocar estilo nela tbm como a ordem numerica </li>
+</ol>
+
+<ul type="disc">
+    <li>essa é a lista nao ordenada</li>
+    <li>tbm posso colosar alguns estilos como o disco </li>
+</up>
+
+<p>para inserir imagem apenas colocar isso</p>
+
+<img src="imagens/download.png" alt="">
+
+<p>ou com url</p>
+
+<a href="imagens/download.png" target="_blank">assim tem url e abre mas se eu colocar blank abre em outra guia</a>
+
+<p>para colocar video é melhor assim</p>
+
+<video controls>
+    <video src="S4nrio, LAUNCH13, RODRICCI MONTAGEM BOTA HIPNOSIS 1.0 (ULTRA SLOWED BRAZILIAN FU.mp4" type="video/mp4" controls>
+    </video>
+</video>
