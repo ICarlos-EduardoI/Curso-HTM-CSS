@@ -35,6 +35,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fontdestaque);
+    font-size: 7vw;
 }
 
 header > p {
@@ -54,19 +55,24 @@ header a:hover, footer {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
     line-height: 2em;
     font-family: var(--fonta);
-    font-size: 2em;
+    font-size: 2vw;
 }
 
-section.imagem > pre {
+section.imagem > p {
     background-color: rgb(34, 33, 33);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 section.normal {
     background-color: white;
     color: black;
+    width: 500px;
+    padding: 20px;
 }
 
 section.imagem {
