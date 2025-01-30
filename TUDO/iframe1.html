@@ -13,7 +13,7 @@
         iframe {
             border: 2px solid black;
             width: 95vw;
-            height: 600px;
+            height: 300px;
         }
     </style>
 </head>
@@ -36,7 +36,27 @@
         <p>Seu navegador nao é compível</p>
     </iframe>
 
+    <!-- sandbox="sandbox" e referrerpolicy="no-referrer" serve para nao coletar informacoes pessoais dentro do iframe da pagina, deixando mais seguro, a funcao sandbox tambem pode ser alterada as permissoes do iframe -->
+
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae qui at nihil sed atque fugit necessitatibus, libero ab iusto corrupti temporibus harum consequuntur provident asperiores, placeat vel doloribus porro iste!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti, sapiente neque nulla quibusdam pariatur vel maiores recusandae aperiam laborum? Recusandae quidem repudiandae non at quasi perferendis quis et corrupti?</p>
     
+    <h1>Video em Iframe</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bLvnFJtqSCA?si=zbF8E-gGJoMXtbEr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- No codigo acima tem as configurações de segurança e permissões -->
+
+    <h1>Mapa do Google</h1>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.640426555008!2d-49.04113410000006!3d-22.32943470000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf677342c39fd1%3A0x5bb087ca3985698b!2sHyde%20Park%20Residence%20-Bauru!5e0!3m2!1sen!2sbr!4v1738200182620!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Mapas do Waze</h1>
+
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.329435&lon=-49.041134&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+    <h1>Google Docs</h1>
+
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQLjAdgvnoNOlCdT4lmPCLXMC7Fm9xxI30iHiIIR8V5mz1GlmUpHlRK_3VA6zae4g/pub?embedded=true"></iframe>
+
 </body>
 </html>
