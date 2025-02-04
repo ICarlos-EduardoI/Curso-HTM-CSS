@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Resposivo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="menuresp.css">
+    <link rel="stylesheet" href="estilos/menuresp.css">
+    <link rel="stylesheet" href="estilos/menustyle.css">
 </head>
-<body>
+<body onresize="mudoutamanho">
 
     <header>
         <h1>Meu site</h1>
@@ -37,6 +38,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudoutamanho {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
