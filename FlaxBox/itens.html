@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaxible Box</title>
+    
+    <style>
+        div.container {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row wrap; 
+        }
+
+        div.item  {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item" style="order: 1;"> Exemplo 1</div>
+        <div class="item" style="order: 0;">Exemplo 2</div>
+        <div class="item" style="order: 2;">Exemplo 3</div>
+        <div class="item">Exemplo 4</div> <!--Quando nao coloca a ordem é 0 -->
+        <div class="item">Exemplo 5</div> <!--Quando nao coloca a ordem é 0 -->
+        <div class="item">Exemplo 6</div> <!--Quando nao coloca a ordem é 0 -->
+        <div class="item">Exemplo 7</div> <!--Quando nao coloca a ordem é 0 -->
+    </div>
+    
+</body>
+</html>
