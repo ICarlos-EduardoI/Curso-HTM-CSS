@@ -9,16 +9,41 @@
         div.container {
             background-color: blue;
             display: flex;
+            height: 100vh;
+            
+            flex-flow: row nowrap; /* = flex-direction: row; + flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            
+            
+            /* DEFINIÇÃO DE SEPARACAO NA BOX NO EIXO TRANSVERSAL
+            
+            align-items: stretch;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: center; */
+            
+            
+            /* DEFINICAO DE SEPARACAO NA BOX NO EIXO PRINCIPAL
+            
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: flex-start; */
 
-            flex-flow: row wrap; /* = flex-direction: row; + flex-wrap: wrap; */
 
-
-            /* flex-wrap: nowrap;
+            /*DEFINIÇÃO DE COMPORTAMENTO DOS COMPONENTES NA BOX
+            
+            flex-wrap: nowrap;
             flex-wrap: wrap;
             flex-wrap: wrap-reverse; */
 
 
-            /* flex-direction: column-reverse;
+            /*DEFINIÇÃO OS EIXOS
+            
+            flex-direction: column-reverse;
             flex-direction: column;
             flex-direction: row;
             flex-direction: row-reverse; */
@@ -30,7 +55,7 @@
             text-align: center;
             padding: 10px;
 
-            flex: auto; /*Quebra para baixo e se molda no tamanho necessario */
+            /* flex: auto; Quebra para baixo e se molda no tamanho necessario */
         }
     </style>
 </head>
