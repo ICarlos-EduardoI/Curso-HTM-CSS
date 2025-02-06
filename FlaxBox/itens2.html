@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaxible Box</title>
+    
+    <style>
+        div.container {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap; 
+        }
+        
+
+        div.item  {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            /* 
+            flex-grow: 0; CONFIGURACAO DE CRESCER, 1 PODE E 0 NAO PODE  
+            flex-shrink: 0; CONFIGURACAO DE ENCOLHER, 1 PODE E 0 NAO PDOE  
+            */
+        }
+
+
+        div#item1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#item2 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#item3 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Exemplo 1</div>
+        <div class="item">Exemplo 2</div>
+        <div class="item">Exemplo 3</div>
+    </div>
+
+    <div class="container">
+        <div class="item" id="item1">Exemplo 1</div>
+        <div class="item" id="item2">Exemplo 2</div>
+        <div class="item" id="item3">Exemplo 3</div>
+    </div>
+    
+</body>
+</html>
